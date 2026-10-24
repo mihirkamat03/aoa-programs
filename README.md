@@ -6,6 +6,8 @@
 
 A comprehensive, exam-ready repository for **Analysis of Algorithms (AOA)** (Semester III / Computer Engineering, TSEC & Mumbai University). Includes **all 16 core practical experiments** written in authentic, examiner-compliant **C code**, paired with a **pro-level interactive web visualizer** featuring step-by-step animations, drag-down comparison spotlights, floating keys, chessboard backtracking, DP grids, string matching, and Viva Voce preparation.
 
+> 🌐 **Live Interactive Web Visualizer:** [https://mihirkamat03.github.io/aoa-programs/](https://mihirkamat03.github.io/aoa-programs/)
+
 ---
 
 ## 📑 Table of Contents
@@ -45,6 +47,22 @@ A comprehensive, exam-ready repository for **Analysis of Algorithms (AOA)** (Sem
 ```plaintext
 aoa-programs/
 │
+├── index.html                           # Web Portal Entry Point (Served directly via GitHub Pages)
+├── css/
+│   └── styles.css                       # Glassmorphic UI & Smooth Animation Keyframes
+├── js/
+│   ├── app.js                           # Main App Controller & Audio Synthesizer
+│   ├── visualizer.js                    # SVG & DOM Visual Rendering Engine
+│   ├── code_snippets.js                 # C, Java & Pseudocode Snippets
+│   ├── viva_data.js                     # Viva Q&A Bank & Complexity Tables
+│   └── algorithms/                      # Step Generators for all 16 algorithms
+│       ├── sorting.js
+│       ├── greedy.js
+│       ├── dp.js
+│       ├── backtracking.js
+│       ├── strings.js
+│       └── graphs.js
+│
 ├── c_programs/                          # Standalone C source files for all 16 practicals
 │   ├── 01_insertion_sort.c
 │   ├── 02_selection_sort.c
@@ -62,23 +80,6 @@ aoa-programs/
 │   ├── 14_rabin_karp_string_matching.c
 │   ├── 15_bfs_traversal.c
 │   └── 16_dfs_traversal.c
-│
-├── websites/                            # Interactive Web Visualizer Application
-│   ├── index.html                       # Web Portal Entry Point
-│   ├── css/
-│   │   └── styles.css                   # Glassmorphic UI & Smooth Animation Keyframes
-│   └── js/
-│       ├── app.js                       # Main App Controller & Audio Synthesizer
-│       ├── visualizer.js                # SVG & DOM Visual Rendering Engine
-│       ├── code_snippets.js             # C, Java & Pseudocode Snippets
-│       ├── viva_data.js                 # Viva Q&A Bank & Complexity Tables
-│       └── algorithms/                  # Step Generators for all 16 algorithms
-│           ├── sorting.js
-│           ├── greedy.js
-│           ├── dp.js
-│           ├── backtracking.js
-│           ├── strings.js
-│           └── graphs.js
 │
 ├── Start_AOA_Visualizer.bat             # One-click Windows desktop launcher
 └── README.md                            # Documentation & Study Guide
@@ -117,7 +118,7 @@ No web servers or dependencies needed! Simply open in any modern browser:
 Double-click `Start_AOA_Visualizer.bat` in the root folder.
 
 ### Option B: Open Directly
-Open `websites/index.html` in Chrome, Edge, Firefox, or Safari.
+Open `index.html` in Chrome, Edge, Firefox, or Safari.
 
 ### Visualizer Keyboard Shortcuts:
 - **`Spacebar`**: Play / Pause animation
