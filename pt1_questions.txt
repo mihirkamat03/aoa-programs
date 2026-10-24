@@ -1,0 +1,31 @@
+=== PAGE 1 ===
+THADOMAL SHAHANI ENGINEERING COLLEGE 
+Academic Year 2026 - 27  
+Date: 24/07/2026 
+ 
+Subject: Analysis of Algorithm                             Subject Code: 2113113 
+Branch: Computer Engineering             Semester: III   
+ 
+Question Bank for PT 1 
+ 
+1. Problem on Time complexity using Count Method  
+2. Problem on Time complexity using Table Method  
+3. Explain Master theorem. (Or )Solve the recurrence relation using Masters 
+Theorem. 
+4. Explain Asymptotic Notations with appropriate equations and graphs. 
+5. Write an algorithm for insertion sort and derive time complexity.  
+6. Write an algorithm for selection sort and derive time complexity.  
+7. Write an algorithm for quick sort and derive time complexity.  
+8. Write an algorithm for merge sort and derive time complexity. 
+9. Construct a minimum spanning tree with starting node A using  Prim's 
+algorithm / Kruskals algorithm. 
+ 
+10.  Using Dijkstra’s single source shortest-path algorithm on the following 
+edge weighted directed graph with vertex P as the source. 
+ 
+ 
+Note: Practice Problems on Dijkstra Algorithm / Prims Algorithm / Kruskal 
+Algorithm. 
+ 
+
+

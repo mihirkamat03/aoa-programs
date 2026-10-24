@@ -1,0 +1,15 @@
+# Binaries and compiled files
+*.exe
+*.out
+*.o
+*.obj
+
+# Editor and OS directories
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large slide decks and raw PDF dumps (uncomment if you want to track them with Git LFS)
+*.pdf
+*.pptx

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOA Practical Exam Visualizer & Master Study Portal | TSEC</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="logo-area">
+      <div class="logo-icon">⚡</div>
+      <div class="logo-text">
+        <h1>AOA Algorithm Visualizer</h1>
+        <span>TSEC / Mumbai University • Semester III Practical Exam</span>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="nav-tab-btn active" data-tab="visualizer">🎮 Visualizer & Code</button>
+      <button class="nav-tab-btn" data-tab="viva">🎓 Viva Voce Bank</button>
+      <button class="nav-tab-btn" data-tab="complexity">📊 Complexity Matrix</button>
+      <button class="nav-tab-btn" data-tab="guidelines">📋 Exam Rules</button>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-badges">
+      <button id="btnSoundToggle" class="ctrl-btn" style="padding: 4px 10px; font-size: 0.78rem;">🔊 Sound: ON</button>
+      <span class="badge badge-accent">16 Core Practicals</span>
+      <span class="badge badge-success">C &amp; Java Ready</span>
+    </div>
+  </header>
+
+  <!-- App Layout -->
+  <div class="app-layout">
+
+    <!-- Left Sidebar: Algorithm Directory -->
+    <aside class="sidebar">
+      <div class="sidebar-search-box">
+        <input type="text" id="sidebarSearch" class="sidebar-search-input" placeholder="🔍 Search algorithm...">
+      </div>
+      <div class="algo-nav-list" id="algoNavList">
+        <!-- Injected via app.js -->
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- SECTION 1: Interactive Visualizer & Code Tab (Default) -->
+      <section id="visualizerTabSection" class="center-split-container">
+
+        <!-- Left Visualizer Column -->
+        <div class="visualizer-column">
+          
+          <!-- Algorithm Header Info -->
+          <div class="algo-headline">
+            <div class="algo-title-row">
+              <h2 id="algoTitle">Insertion Sort</h2>
+              <span id="algoSrBadge" class="badge badge-primary">TSEC Sr. No. 1</span>
+            </div>
+            <div id="algoTagline" class="tagline-text">Sort playing cards one by one in your hand</div>
+          </div>
+
+          <!-- Playback Controls Bar -->
+          <div class="playback-controls-bar">
+            <div class="ctrl-btn-group">
+              <button id="btnReset" class="ctrl-btn" title="Reset (R)">🔄 Reset</button>
+              <button id="btnStepBack" class="ctrl-btn" title="Previous Step (Left Arrow)">⏮ Prev</button>
+              <button id="btnPlayPause" class="ctrl-btn btn-play" title="Play/Pause (Space)"><span>▶</span> Play</button>
+              <button id="btnStepForward" class="ctrl-btn" title="Next Step (Right Arrow)">Next ⏭</button>
+              <button id="btnRandomInput" class="ctrl-btn" title="Randomize Data">🔀 New Input</button>
+            </div>
+
+            <div class="speed-control">
+              <span>Speed:</span>
+              <input type="range" id="speedSlider" class="speed-slider" min="1" max="9" value="5">
+              <span id="speedLabel" style="font-family: var(--font-mono); font-weight: bold; width: 32px;">1x</span>
+            </div>
+
+            <div id="stepIndicatorBadge" class="step-indicator-badge">Step 1 of 1</div>
+          </div>
+
+          <!-- Visual Stage Canvas -->
+          <div class="visual-stage-canvas" id="visualStageCanvas">
+            <!-- Dynamic SVG / DOM rendered here -->
+          </div>
+
+          <!-- Kid-Friendly ELI5 Card -->
+          <div class="eli5-explanation-card">
+            <div class="eli5-header">
+              <span>💡 Explain Like I'm 5 (Step-by-Step Story):</span>
+            </div>
+            <div class="eli5-body" id="eli5ExplanationText">
+              Loading algorithm explanation...
+            </div>
+          </div>
+
+          <!-- Variable Inspector Watch Bar -->
+          <div class="variable-watch-bar" id="variableWatchBar">
+            <!-- Dynamic Badges -->
+          </div>
+
+        </div>
+
+        <!-- Right Code Column (Side-by-Side Synchronizer) -->
+        <div class="code-column">
+          <div class="code-header-bar">
+            <div class="code-lang-tabs">
+              <button class="code-lang-btn active" data-lang="c">C Code</button>
+              <button class="code-lang-btn" data-lang="java">Java Code</button>
+              <button class="code-lang-btn" data-lang="pseudo">Pseudo-Code</button>
+            </div>
+            <button id="btnCopyCode" class="code-copy-btn">📋 Copy Code</button>
+          </div>
+
+          <div class="code-viewer-container" id="codeViewer">
+            <!-- Injected code lines with active highlight -->
+          </div>
+        </div>
+
+      </section>
+
+      <!-- SECTION 2: Study Mode Tabs (Viva Voce / Complexity / Guidelines) -->
+      <section id="studyTabSection" style="display: none; flex: 1; overflow-y: auto;">
+        <!-- Injected via app.js -->
+      </section>
+
+      <!-- Bottom Drawer: Practical Exam Console Output -->
+      <footer class="exam-output-drawer">
+        <div class="drawer-header">
+          <div class="drawer-title">
+            <span>💻</span> TSEC Practical Exam Output Console (Stdout)
+          </div>
+          <span style="font-size: 0.72rem; color: var(--text-dim);">Exact format required by practical examiner</span>
+        </div>
+        <div class="drawer-body-terminal" id="examOutputTerminal">
+=== TSEC PRACTICAL EXAM CONSOLE OUTPUT ===
+Select an algorithm from the sidebar to inspect pass-by-pass stdout!
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/viva_data.js"></script>
+  <script src="js/code_snippets.js"></script>
+  <script src="js/algorithms/sorting.js"></script>
+  <script src="js/algorithms/greedy.js"></script>
+  <script src="js/algorithms/dp.js"></script>
+  <script src="js/algorithms/backtracking.js"></script>
+  <script src="js/algorithms/strings.js"></script>
+  <script src="js/algorithms/graphs.js"></script>
+  <script src="js/visualizer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

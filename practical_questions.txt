@@ -1,0 +1,75 @@
+=== PAGE 1 ===
+THADOMAL SHAHANI ENGINEERING COLLEGE 
+Experiment List 
+Subject: Analysis of 
+Algorithm 
+Academic year 2026-27 
+Branch: Computer Engineering Semester: III 
+ 
+Sr. No. Topics 
+1. Implement Insertion Sort (show output after every pass) 
+2. Implement Selection Sort (show output after every pass) 
+3. Implement Quick Sort (Print number of calls to quick sort 
+procedure) 
+4. Implement Merge Sort (Print number of calls to merge sort 
+procedure) 
+5. Implement minimum spanning tree using Prim’s algorithm. (Print 
+minimum cost and edges in MST) 
+6. Implement minimum spanning tree using Kruskal’s algorithm. 
+(Print minimum cost and edges in MST) 
+7. Implement 0/1 Knapsack algorithm (print solution vector, total 
+profit earned and matrix ) 
+8. Implement Longest Common Subsequence (Print length, 
+characters in LCS and matrix along with arrows  ) 
+9. Implement Single Source Shortest Path using Dijkstra’s 
+Algorithm (Print final D and Pi vector, Print path between every 
+pair of vertices) 
+10. Implement All Pair Shortest Path using Floyd Warshall 
+Algorithm (Print final D and Pi matrix, Print path between every 
+pair of vertices) 
+11. Implement N Queen Problem. (print output in 1d and 2d format 
+and print total number of calls to queen procedure) 
+12. Implement Sum of Subset Problem (Print total number of calls to 
+Sum of Subset procedure) 
+13. Implement String Matching Algorithm using KMP Method 
+(Print all occurrences of string) 
+14. Implement String Matching Algorithm using Rabin Karp 
+Method (Print all occurrences of string) 
+
+=== PAGE 2 ===
+15.  
+Graph Traversal Algorithm BFS 
+16 Graph Traversal Algorithm DFS 
+    
+ 
+Instructions for Practical Examination  
+ 
+1. All students check seating arrangement  and report 30 minutes prior to the 
+start of the exam time and ensure that u have uploaded e -journal of Analysis 
+of Algorithm otherwise u will not be allowed for practical examination.  
+ 
+2. Everyone should carry their own writing material (pen pencil scale Eraser 
+calculator etc.) and water bottle.  
+ 
+3. Exchange of anything is strictly not allowed. 
+ 
+4. Late comers (for whatever reason) will not get any extra time. 
+ 
+5. Carrying mobile phone  /any study material  / e gadgets/talking/looking here 
+and there will be treated as a malpractice. Concerned students exam will be 
+treated null and void 
+ 
+6. Wash room visit during 1hr of exam is not allowed  
+ 
+7. Follow supervisor's Instructions strictly. 
+ 
+8. All students should strictly come in formal dress code. 
+ 
+9. Ensure that u have filled Analysis of Algorithm feedback and Course End 
+Survey form before coming for practical exam. 
+ 
+10.  Prepare thoroughly syllabus of AOA for viva as well as question bank for 
+Coding. Programming language allowed C and Java. 
+ 
+All the best👍 
+
